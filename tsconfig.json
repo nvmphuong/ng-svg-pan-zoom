@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
+
+    "importHelpers": true,
     "baseUrl": "./src",
+    "allowJs":true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "rootDir": "./src",

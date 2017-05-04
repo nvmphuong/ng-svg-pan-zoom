@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "declaration": true,
+    "declaration": false,
     "module": "es2015",
+    "allowJs":true,
     "target": "es5",
     "baseUrl": ".",
-    "stripInternal": true,
+    "stripInternal": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "allowUnreachableCode": true,
     "moduleResolution": "node",
     "outDir": "../build",
     "rootDir": ".",
@@ -19,12 +21,12 @@
   },
   "angularCompilerOptions": {
     "annotateForClosureCompiler": true,
+    "flatModuleIndex": false,
     "strictMetadataEmit": true,
-    "skipTemplateCodegen": true,
-    "flatModuleOutFile": "ng-svg-pan-zoom.js",
-    "flatModuleId": "ng-svg-pan-zoom"
+    "skipTemplateCodegen": true
   },
   "files": [
     "./index.ts"
+
   ]
 }
