@@ -1,20 +1,19 @@
-import { NgModule, ModuleWithProviders } from '@angular/core';
-import { NgSvgPanZoomComponent } from './ng-svg-pan-zoom.component';
+import {NgModule, ModuleWithProviders} from '@angular/core';
+import * as svgPanZoom from './lib/svg-pan-zoom';
 
-export * from './ng-svg-pan-zoom.component';
 
 @NgModule({
-  declarations: [
-    NgSvgPanZoomComponent
-  ],
-  exports: [
-    NgSvgPanZoomComponent
-  ]
+    declarations: [
+        svgPanZoom
+    ],
+    exports: [
+        svgPanZoom
+    ]
 })
 export class NgSvgPanZoom {
-  static forRoot(): ModuleWithProviders {
-    return {
-      ngModule: NgSvgPanZoom
-    };
-  }
+    static forRoot(): ModuleWithProviders {
+        return {
+            ngModule: NgSvgPanZoom
+        };
+    }
 }
